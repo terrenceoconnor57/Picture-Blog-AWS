@@ -6,8 +6,35 @@ import './App.css';
 
 
 class App extends React.Component {
+  constructor(props){
+    super(props);
+      this.state = { images: []}
+
+  }
+
+
+  handleMe = () => {
+
+      fetch('https://testingbucketput.s3.amazonaws.com/pictures.json')
+          .then(res => res.json())
+          .then(json => {
+              this.setState({
+                  images: json
+
+              })
+          }).catch((err) => {
+              console.log(err);
+          });
+
+
+  }
 
   render() {
+    const { images } = this.state;
+
+
+
+
     return (
       <div className = 'center'>
       <div class="ui huge header">Photo Blog</div>
@@ -15,17 +42,19 @@ class App extends React.Component {
       <br/>
       <br/>
       <div class="ui buttons">
-  <button class="ui button">One</button>
+  <button class="ui button" onClick = {this.handleMe}>One</button>
   <button class="ui button">Two</button>
   <button class="ui button">Three</button>
 </div>
 <div className= 'break'/>
-<div class="ui grid">
-  <div class="four wide column">asdfsd</div>
-  <div class="four wide column">asdf</div>
-  <div class="four wide column">sdf</div>
-  <div class="four wide column">sadfsdf</div>
-</div>
+
+<ul className="wholelist">
+  {images.map((image =>
+  <li key = {image.id}><img src = {image.image}/></li>
+))}
+
+</ul>
+
 
 
       </div>

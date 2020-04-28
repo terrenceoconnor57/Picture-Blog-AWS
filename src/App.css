@@ -11,3 +11,7 @@
 .break {
   padding: 40px;
 }
+
+.wholelist {
+  list-style: none;
+}
