@@ -1,10 +1,61 @@
 .center {
   text-align: center;
 
+
 }
 
 .buttons {
   font-size: 40px;
+}
+
+.title {
+color: black;
+font-family: 'Comfortaa', cursive;
+font-size: 70px;
+color: black;
+padding-top: 60px;
+
+}
+
+.title2 {
+  font-size: 55px;
+  padding-top: 50px;
+}
+
+.listtop {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  padding-top: 50px;
+
+
+
+
+
+}
+
+.listitem {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.links {
+  font-size: 50px;
+  color: black;
+  padding: none;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+
+
+
+
+
+.camera {
+  font-size: 30px;
 }
 
 
@@ -12,6 +63,49 @@
   padding: 40px;
 }
 
+.img {
+  border-radius: 5px;
+  height: 200px;
+  width: 300px;
+  margin: 10px;
+}
+
+.imagesfront {
+
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 70px;
+
+}
+
+.wrapp {
+  background: black;
+  width: 400px;
+}
+
+.piccap {
+  color: white;
+}
+
+
+
+
+
 .wholelist {
   list-style: none;
+  margin-left: auto;
+  margin-right: 50px;
+
+}
+
+.picsize {
+  width: 500px;
+  border: 2px solid white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px;
+
+}
+
+.listspace {
+  padding-bottom: 10px;
 }

@@ -1,65 +1,42 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
+import Me from './Me/Me';
+import Main from './Main';
+import { BrowserRouter, Route, Link } from "react-router-dom";
 
 
 
 
 class App extends React.Component {
-  constructor(props){
-    super(props);
-      this.state = { images: []}
 
-  }
-
-
-  handleMe = () => {
-
-      fetch('https://testingbucketput.s3.amazonaws.com/pictures.json')
-          .then(res => res.json())
-          .then(json => {
-              this.setState({
-                  images: json
-
-              })
-          }).catch((err) => {
-              console.log(err);
-          });
-
-
-  }
 
   render() {
-    const { images } = this.state;
+
 
 
 
 
     return (
+      <BrowserRouter>
       <div className = 'center'>
-      <div class="ui huge header">Photo Blog</div>
-      <h2>Here are some photos of me!</h2>
+      <div className="title">Photo Blog App</div>
+      <div className="title2"><i class="camera retro icon"></i></div>
+      <ul className ='listtop'>
+        <li className = 'listitem'><Link className = 'links' to = '/Me/Me'><i class="id badge icon"></i>Me</Link></li>
+        <li className = 'listitem'><Link className = 'links' to = '/Me/Me'><i class="exclamation icon"></i>Hobbies</Link></li>
+        <li className = 'listitem'><Link className = 'links' to = '/Me/Me'><i class="lemon icon"></i>Food</Link></li>
+      </ul>
+
       <br/>
-      <br/>
-      <div class="ui buttons">
-  <button class="ui button" onClick = {this.handleMe}>One</button>
-  <button class="ui button">Two</button>
-  <button class="ui button">Three</button>
-</div>
-<div className= 'break'/>
 
-<ul className="wholelist">
-  {images.map((image =>
-  <li key = {image.id}><img src = {image.image}/></li>
-))}
-
-</ul>
-
+<Route path = "/Me/Me" exact component = {Me} />
 
 
       </div>
 
 
+      </BrowserRouter>
 
     );
   }
