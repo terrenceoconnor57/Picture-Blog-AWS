@@ -9,18 +9,26 @@
 }
 
 .title {
-color: black;
 font-family: 'Comfortaa', cursive;
 font-size: 70px;
-color: black;
+color: white;
 padding-top: 60px;
+background: #76a3e3;
 
 }
+
 
 .title2 {
   font-size: 55px;
   padding-top: 50px;
+  padding-bottom: 20px;
+  background: #76a3e3;
+  color: white;
+
 }
+
+
+
 
 .listtop {
   list-style: none;
@@ -39,6 +47,35 @@ padding-top: 60px;
   margin-left: auto;
   margin-right: auto;
 
+}
+
+
+
+.listside {
+  list-style: none;
+  float: left;
+  background: #76a3e3;
+  position: fixed;
+  padding-bottom: 40px;
+  padding-top: 30px;
+  margin-top: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+
+}
+
+.listitemside {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-left: -10px;
+  width: 50px;
+}
+
+.linkside {
+  color: white;
+  font-size: 30px;
+  margin-left: -20px;
 }
 
 .links {
@@ -64,10 +101,10 @@ padding-top: 60px;
 }
 
 .img {
-  border-radius: 5px;
-  height: 200px;
-  width: 300px;
-  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px;
+  padding: 10px;
+
 }
 
 .imagesfront {

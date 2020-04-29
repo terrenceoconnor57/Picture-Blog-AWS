@@ -38,24 +38,17 @@ class Me extends React.Component {
 
     return (
       <BrowserRouter>
-<div className = 'center'>
+      <h1 className = 'description'>A collection of photos about me.</h1>
+      <br/><br/><br/>
 
 
-<div className = 'photos'>
-<ul className="wholelist">
-  {images.map((image =>
-  <li key = {image.id} className = 'listspace'>
-  <h1 className = 'caption'>{image.description}</h1>
-  <img className = 'picsize' src = {image.image}/>
-
-  </li>
-))}
+      <div class="ui medium images">
+      {this.state.images.map((image =>
+  <img className = 'img' key = {image.id} src={image.image}/>
+  ))}
 
 
-</ul>
 </div>
-</div>
-
 
 
 </BrowserRouter>
