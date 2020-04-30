@@ -41,15 +41,16 @@ class Me extends React.Component {
       <h1 className = 'description'>A collection of photos about me.</h1>
       <br/><br/><br/>
 
-
+      <div className = 'allimages'>
       <div class="ui medium images">
       {this.state.images.map((image =>
-  <img className = 'img' key = {image.id} src={image.image}/>
+  <img className = 'img' key = {image.id} src={image.image}
+  onClick = {() => window.open(image.image)}/>
   ))}
 
 
 </div>
-
+</div>
 
 </BrowserRouter>
 

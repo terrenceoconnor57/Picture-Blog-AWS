@@ -3,6 +3,8 @@ import React from 'react';
 import './App.css';
 import Me from './Me/Me';
 import Main from './Main';
+import Info from './Info';
+import PutRequest from './PutRequest';
 import { BrowserRouter, Route, Link } from "react-router-dom";
 
 
@@ -29,15 +31,24 @@ class App extends React.Component {
         <li className = 'listitemside'><Link className = 'linkside' to = '/Me/Me'><i class="id badge icon"></i></Link></li>
         <li className = 'listitemside'><Link className = 'linkside' to = '/'><i class="exclamation icon"></i></Link></li>
         <li className = 'listitemside'><Link className = 'linkside' to = '/'><i class="lemon icon"></i></Link></li>
-        <li className = 'listitemside'><Link className = 'linkside' to = '/'><i class="info icon"></i></Link></li>
+        <li className = 'listitemside'><Link className = 'linkside' to = '/Info'><i class="info icon"></i></Link></li>
       </ul>
       </div>
       <br/>
 
-        
 
+<Route path = '/' exact component = {Info} />
+<Route path = '/Info' exact component = {Info} />
 
 <Route path = "/Me/Me" exact component = {Me} />
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
 
 
       </div>
