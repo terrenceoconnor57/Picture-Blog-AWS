@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Me from './Me/Me';
+import Me from './Me';
 
 import { BrowserRouter, Route, Link } from "react-router-dom";
 

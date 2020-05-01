@@ -1,9 +1,11 @@
 import React from 'react';
 
 import './App.css';
-import Me from './Me/Me';
+import Me from './Me';
 import Main from './Main';
 import Info from './Info';
+import Hobbies from './Hobbies';
+import Food from './Food';
 import PutRequest from './PutRequest';
 import { BrowserRouter, Route, Link } from "react-router-dom";
 
@@ -28,9 +30,9 @@ class App extends React.Component {
       </div>
       <div className ='sidediv'>
       <ul className = 'listside'>
-        <li className = 'listitemside'><Link className = 'linkside' to = '/Me/Me'><i class="id badge icon"></i></Link></li>
-        <li className = 'listitemside'><Link className = 'linkside' to = '/'><i class="exclamation icon"></i></Link></li>
-        <li className = 'listitemside'><Link className = 'linkside' to = '/'><i class="lemon icon"></i></Link></li>
+        <li className = 'listitemside'><Link className = 'linkside' to = '/Me'><i class="id badge icon"></i></Link></li>
+        <li className = 'listitemside'><Link className = 'linkside' to = '/Hobbies'><i class="exclamation icon"></i></Link></li>
+        <li className = 'listitemside'><Link className = 'linkside' to = '/Food'><i class="lemon icon"></i></Link></li>
         <li className = 'listitemside'><Link className = 'linkside' to = '/Info'><i class="info icon"></i></Link></li>
       </ul>
       </div>
@@ -38,9 +40,14 @@ class App extends React.Component {
 
 
 <Route path = '/' exact component = {Info} />
+
+<Route path = '/Hobbies' exact component = {Hobbies} />
+
+<Route path = '/Food' exact component = {Food} />
+
 <Route path = '/Info' exact component = {Info} />
 
-<Route path = "/Me/Me" exact component = {Me} />
+<Route path = "/Me" exact component = {Me} />
 
 <br/>
 <br/>

@@ -15,6 +15,18 @@ color: white;
 padding-top: 60px;
 background: #76a3e3;
 
+
+}
+
+@media (max-width: 700px){
+  .title {
+    font-size: 50px;
+    line-height: 70px;
+    margin-top: -30px;
+
+  }
+
+
 }
 
 
@@ -25,20 +37,57 @@ background: #76a3e3;
   background: #76a3e3;
   color: white;
 
+
+
+
 }
 
+@media (max-width: 700px){
+  .title2 {
+    font-size: 35px;
+    padding-top: 40px;
+  }
 
 
+}
+
+.infomain {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+}
+
+@media (max-width: 700px){
+  .infomain {
+    margin-left: 90px;
+    width: 450px;
+  }
+
+
+}
+
+@media (max-width: 600px){
+  .infomain {
+    margin-left: 90px;
+    width: 300px;
+  }
+
+}
+
+@media (max-width: 400px){
+  .infomain {
+    margin-left: auto;
+    width: 300px;
+  }
+
+}
 
 .listtop {
   list-style: none;
   display: flex;
   width: 100%;
   padding-top: 50px;
-
-
-
-
 
 }
 
@@ -59,6 +108,16 @@ background: #76a3e3;
   .description {
     margin-left: 90px;
   }
+
+}
+
+@media (max-width: 400px){
+  .description {
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+  }
+
 }
 
 .listside {
@@ -75,6 +134,27 @@ background: #76a3e3;
 
 }
 
+@media (max-width: 400px){
+  .listside {
+    list-style: none;
+    display: flex;
+    float: none;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-top: -1px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    width: 100%;
+    position: sticky;
+    top: 50px;
+
+
+  }
+
+
+}
+
+
 .listitemside {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -87,6 +167,18 @@ background: #76a3e3;
   font-size: 30px;
   margin-left: -20px;
 }
+
+@media (max-width: 400px){
+  .listitemside {
+
+    margin-left: 30px;
+    margin-right: 35px;
+    padding-bottom: 20px;
+  }
+
+
+}
+
 
 .links {
   font-size: 50px;
@@ -103,9 +195,10 @@ background: #76a3e3;
   margin-right: 20px;
 }
 
-@media (max-width: 700px){
+@media (max-width: 400px){
   .allimages {
-
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -121,7 +214,7 @@ background: #76a3e3;
 .img {
   border-radius: 10px;
   box-shadow: 3px 3px 10px;
-  padding: 10px;
+  
   cursor: pointer;
 
 }

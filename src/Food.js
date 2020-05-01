@@ -1,12 +1,12 @@
 import React from 'react';
 
-import '../App.css';
+import './App.css';
 
 import { BrowserRouter, Route, Link } from "react-router-dom";
 
 
 
-class Me extends React.Component {
+class Food extends React.Component {
   constructor(props){
     super(props);
       this.state = { images: []}
@@ -38,7 +38,7 @@ class Me extends React.Component {
 
     return (
       <BrowserRouter>
-      <h1 className = 'description'>A collection of photos about me.</h1>
+      <h1 className = 'description'>Some of the food that I love to eat.</h1>
       <br/><br/><br/>
 
       <div className = 'allimages'>
@@ -59,4 +59,4 @@ class Me extends React.Component {
   }
 }
 
-export default Me;
+export default Food;
