@@ -11,7 +11,7 @@
 .title {
 font-family: 'Comfortaa', cursive;
 font-size: 70px;
-color: white;
+color: #ebeff0;
 padding-top: 60px;
 background: #76a3e3;
 
@@ -35,7 +35,7 @@ background: #76a3e3;
   padding-top: 50px;
   padding-bottom: 20px;
   background: #76a3e3;
-  color: white;
+  color: #ebeff0;
 
 
 
@@ -102,6 +102,7 @@ background: #76a3e3;
   margin-left: auto;
   margin-right: auto;
   width: 400px;
+  font-family: 'Oswald', sans-serif;
 }
 
 @media (max-width: 500px){
@@ -163,7 +164,7 @@ background: #76a3e3;
 }
 
 .linkside {
-  color: white;
+  color: #ebeff0;
   font-size: 30px;
   margin-left: -20px;
 }
@@ -193,6 +194,7 @@ background: #76a3e3;
 .allimages {
   margin-left: 90px;
   margin-right: 20px;
+
 }
 
 @media (max-width: 400px){
@@ -214,8 +216,8 @@ background: #76a3e3;
 .img {
   border-radius: 10px;
   box-shadow: 3px 3px 10px;
-  
   cursor: pointer;
+
 
 }
 
@@ -253,6 +255,30 @@ background: #76a3e3;
   border-radius: 5px;
   box-shadow: 5px 5px 10px;
 
+}
+
+.infofont, .infofont2 {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 25px;
+}
+
+@media (max-width: 400px){
+  .infofont2 {
+    display: none;
+  }
+}
+
+
+.infofontmobile {
+  display: none;
+}
+
+@media (max-width: 400px){
+  .infofontmobile {
+    display: block;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 25px;
+  }
 }
 
 .listspace {

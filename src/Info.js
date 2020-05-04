@@ -16,10 +16,13 @@ class Info extends React.Component {
         to display some photos about me.</p>
 
         <p className = 'infofont'>I've uploaded my photos to AWS S3
-        and use a GET request to display them in
+        and fetch them to display in
         my application.</p>
 
-        <p className = 'infofont'>Choose one of the icons on the left
+        <p className = 'infofont2'>Choose one of the icons on the left
+        to display my different collections of photos!</p>
+
+        <p className = 'infofontmobile'>Choose one of the icons above
         to display my different collections of photos!</p>
 
 </div>

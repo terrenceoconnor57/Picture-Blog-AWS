@@ -16,7 +16,7 @@ class Food extends React.Component {
 
   componentDidMount = () => {
 
-      fetch('https://testingbucketput.s3.amazonaws.com/pictures.json')
+      fetch('https://testingbucketput.s3.amazonaws.com/Food.json')
           .then(res => res.json())
           .then(json => {
               this.setState({
