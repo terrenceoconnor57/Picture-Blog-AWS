@@ -1,4 +1,4 @@
-# Photo Blog App
+# React Photo Blog App
 
 Visit http://myphotoblogapp.s3-website-us-east-1.amazonaws.com/ to check out the site.
 
